@@ -52,8 +52,8 @@ footer > h4 {
   display: flex;
   justify-content: space-evenly;
   background-color: #fff1f1;
-
   align-items: center;
+  padding: 20px 0;
 }
 .menuLink {
   padding-right: 8px;
@@ -61,6 +61,10 @@ footer > h4 {
   text-decoration: none;
   font-size: 20px;
   font-weight: 700;
+}
+.menuLink:hover {
+  color: #fff1f1;
+  background-color: #4d0ecb;
 }
 .gridContainer {
   display: grid;
@@ -78,4 +82,12 @@ footer > h4 {
   border: solid 4px #000;
   box-shadow: 15px 15px 0 -4px #4d0ecb, 15px 15px #000;
   justify-self: center;
+}
+.homeLink {
+  text-decoration: none;
+  color: #4d0ecb;
+}
+.homeLink:hover {
+  color: #fff1f1;
+  background-color: #4d0ecb;
 }

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Puzzled from "puzzled.png";
+import rulesCat from "rulesCat.png";
 
 export default function Rules() {
   return (
@@ -10,7 +10,12 @@ export default function Rules() {
           <h3>view = function(state)</h3>
         </div>
 
-        <Image src={Puzzled} alt="Scientist looking puzzled" />
+        <Image
+          src={rulesCat}
+          alt="Cat in space helmet saying Hi"
+          width={350}
+          height={350}
+        />
       </section>
       <section>
         <div className="gridContainer">

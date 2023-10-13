@@ -1,9 +1,6 @@
 import Link from "next/link";
 import "./globals.css";
-import { Inter } from "next/font/google";
 import { Play } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const play = Play({
   weight: ["400", "700"],
@@ -23,7 +20,11 @@ export default function RootLayout({ children }) {
       <body className={play.className}>
         <header>
           <div className="container">
-            <h1>Reactionary</h1>
+            <h1>
+              <Link href="/rules" className="homeLink">
+                Reactionary
+              </Link>
+            </h1>
             <span>
               <Link href="/rules" className="menuLink">
                 Rules
@@ -31,13 +32,15 @@ export default function RootLayout({ children }) {
               <Link href="/hooks" className="menuLink">
                 Hooks
               </Link>
-              <Link href="/rules" className="menuLink">
+              <Link href="/custom" className="menuLink">
                 Custom
               </Link>
             </span>
           </div>
         </header>
+
         <main>{children}</main>
+
         <footer>
           <h4>Side Effects</h4>
           <h4>!doing(view=function(state))</h4>

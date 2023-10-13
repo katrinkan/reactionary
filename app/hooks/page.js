@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Puzzled from "puzzled.png";
+import hooksCat from "hooksCat.png";
 import styles from "./styles.module.css";
 
 export default function Hooks() {
@@ -11,7 +11,12 @@ export default function Hooks() {
           <h3>view = function(state)</h3>
         </div>
 
-        <Image src={Puzzled} alt="Scientist looking puzzled" />
+        <Image
+          src={hooksCat}
+          alt="Cat in space helmet is happy"
+          width={350}
+          height={350}
+        />
       </section>
       <section>
         <div className="gridContainer">
