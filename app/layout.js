@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
               <Link href="/rules" className="menuLink">
                 Rules
               </Link>
-              <Link href="/rules" className="menuLink">
+              <Link href="/hooks" className="menuLink">
                 Hooks
               </Link>
               <Link href="/rules" className="menuLink">

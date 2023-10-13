@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Puzzled from "puzzled.png";
-import styles from "./styles.module.css";
 
 export default function Rules() {
   return (
@@ -13,30 +12,30 @@ export default function Rules() {
 
         <Image src={Puzzled} alt="Scientist looking puzzled" />
       </section>
-      <section className={styles.main}>
-        <div className={styles.gridContainer}>
-          <div className={styles.gridItem}>
+      <section>
+        <div className="gridContainer">
+          <div className="gridItem">
             <h4>Rule #0</h4>
             <p>
               When a component renders, it should do so without running into any
               side effects.
             </p>
           </div>
-          <div className={styles.gridItem}>
+          <div className="gridItem">
             <h4>Rule #1</h4>
             <p>
               If a side effect is triggered by an event, put that side effect in
               an event handler.
             </p>
           </div>
-          <div className={styles.gridItem}>
+          <div className="gridItem">
             <h4>Rule #2</h4>
             <p>
               If a side effect is synchronising your component with some outside
               system, put that side effect inside useEffect.
             </p>
           </div>
-          <div className={styles.gridItem}>
+          <div className="gridItem">
             <h4>Rule #3</h4>
             <p>
               If a side effect is synchronising your component with some outside
@@ -44,7 +43,7 @@ export default function Rules() {
               the screen, put that side effect inside useLayoutEffect.
             </p>
           </div>
-          <div className={styles.gridItem}>
+          <div className="gridItem">
             <h4>Rule #4</h4>
             <p>
               If a side effect is subscribing to an external store, use the

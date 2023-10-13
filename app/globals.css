@@ -28,6 +28,7 @@ h3 {
 }
 h4 {
   font-size: 28px;
+  padding-left: 20px;
 }
 p {
   font-size: 24px;
@@ -59,4 +60,22 @@ footer > h4 {
   color: #4d0ecb;
   text-decoration: none;
   font-size: 20px;
+  font-weight: 700;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  padding: 50px 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.gridItem {
+  background-color: white;
+  color: #4d0ecb;
+  padding: 5px 10px;
+  width: 70%;
+  border: solid 4px #000;
+  box-shadow: 15px 15px 0 -4px #4d0ecb, 15px 15px #000;
+  justify-self: center;
 }
