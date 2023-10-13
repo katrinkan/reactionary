@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Puzzled from "puzzled.png";
+import styles from "./styles.module.css";
 
 export default function Hooks() {
   return (
@@ -66,14 +67,16 @@ export default function Hooks() {
         </div>
       </section>
       <section>
-        <h3>Danger Zone</h3>
-        <p>
-          Performance optimization comes never for free.The default behavior of
-          React isn't to memoize components, functions or values because the
-          majority of the time it is unnecessary. This applies for React.memo(),
-          useMemo and useCallback. React treats these like a performance hint
-          rather than a guarantee. It may choose to forget...
-        </p>
+        <div className={styles.dangerzone}>
+          <h3>Danger Zone</h3>
+          <p>
+            Performance optimization comes never for free.The default behavior
+            of React isn't to memoize components, functions or values because
+            the majority of the time it is unnecessary. This applies for
+            React.memo(), useMemo and useCallback. React treats these like a
+            performance hint rather than a guarantee. It may choose to forget...
+          </p>
+        </div>
         <div className="gridContainer">
           <div className="gridItem">
             <h4>useMemo</h4>
