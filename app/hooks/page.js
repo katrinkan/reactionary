@@ -35,7 +35,7 @@ export default function Hooks() {
             <p>
               use it, if you need to preserve state that has nothing to do with
               render. It creates a value that is preserved across re-renders but
-              it won't trigger a re-render when it changes. You can pass an
+              it won&apos;t trigger a re-render when it changes. You can pass an
               initial value. Unlike useState, this initial value is mutalbe.
             </p>
           </div>
@@ -54,7 +54,7 @@ export default function Hooks() {
             <p>
               Sometimes we need to be able to use a reactive value (like state)
               inside of useEffect, but that reactive value has nothing to do
-              with synchronising the component, so it shouldn't need to be
+              with synchronising the component, so it shouldn&apos;t need to be
               included in the dependency array. We can use useEffectEvent to
               abstract those values into their own event handler which we can
               use inside useEffect.
@@ -76,9 +76,9 @@ export default function Hooks() {
           <h3>Danger Zone</h3>
           <p>
             Performance optimization comes never for free.The default behavior
-            of React isn't to memoize components, functions or values because
-            the majority of the time it is unnecessary. This applies for
-            React.memo(), useMemo and useCallback. React treats these like a
+            of React isn&apos;t to memoize components, functions or values
+            because the majority of the time it is unnecessary. This applies for
+            React.memo, useMemo and useCallback. React treats these like a
             performance hint rather than a guarantee. It may choose to forget...
           </p>
         </div>
@@ -94,10 +94,10 @@ export default function Hooks() {
           <div className="gridItem">
             <h4>React.memo</h4>
             <p>
-              is a higher-order component that let's you skip re-rendering a
-              component if it's props haven't changed. React will render the
-              component an memorise the result. On re-renders React will perform
-              a shallow comparison.
+              is a higher-order component that let&apos;s you skip re-rendering
+              a component if it&apos;s props haven&apos;t changed. React will
+              render the component an memorise the result. On re-renders React
+              will perform a shallow comparison.
             </p>
           </div>
           <div className="gridItem">
