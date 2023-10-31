@@ -15,6 +15,7 @@ export default function Rules() {
           alt="Cat in space helmet saying Hi"
           width={350}
           height={350}
+          className="image"
         />
       </section>
       <section>

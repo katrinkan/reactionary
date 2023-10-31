@@ -16,6 +16,7 @@ export default function Hooks() {
           alt="Cat in space helmet is happy"
           width={350}
           height={350}
+          className="image"
         />
       </section>
       <section>

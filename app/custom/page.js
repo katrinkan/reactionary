@@ -245,6 +245,7 @@ export default function Custom() {
           alt="Cat in space helment loves it"
           height={350}
           width={350}
+          className="image"
         />
       </section>
       <section>
