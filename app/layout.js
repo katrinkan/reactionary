@@ -1,6 +1,6 @@
+import Link from "next/link";
 import "./globals.css";
 import { Play } from "next/font/google";
-import Nav from "./components/nav";
 
 const play = Play({
   weight: ["400", "700"],
@@ -19,7 +19,24 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={play.className}>
         <header>
-          <Nav />
+          <div className="container">
+            <h1>
+              <Link href="/rules" className="homeLink">
+                Reactionary
+              </Link>
+            </h1>
+            <span>
+              <Link href="/rules" className="menuLink">
+                Rules
+              </Link>
+              <Link href="/hooks" className="menuLink">
+                Hooks
+              </Link>
+              <Link href="/custom" className="menuLink">
+                Custom
+              </Link>
+            </span>
+          </div>
         </header>
 
         <main>{children}</main>

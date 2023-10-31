@@ -16,7 +16,6 @@ export default function Hooks() {
           alt="Cat in space helmet is happy"
           width={350}
           height={350}
-          className="image"
         />
       </section>
       <section>
@@ -61,7 +60,7 @@ export default function Hooks() {
               use inside useEffect.
             </p>
           </div>
-          <div className="gridItem lastItem">
+          <div className="gridItem">
             <h4>useSyncExternalStore</h4>
             <p>
               In scenarios where a piece of non-React state is already being
@@ -101,7 +100,7 @@ export default function Hooks() {
               a shallow comparison.
             </p>
           </div>
-          <div className="gridItem lastItem">
+          <div className="gridItem">
             <h4>useCallback</h4>
             <p>
               Any function you create with useCallback will not be re-created on

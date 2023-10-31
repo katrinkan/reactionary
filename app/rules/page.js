@@ -15,7 +15,6 @@ export default function Rules() {
           alt="Cat in space helmet saying Hi"
           width={350}
           height={350}
-          className="image"
         />
       </section>
       <section>
@@ -49,7 +48,7 @@ export default function Rules() {
               the screen, put that side effect inside useLayoutEffect.
             </p>
           </div>
-          <div className="gridItem lastItem">
+          <div className="gridItem">
             <h4>Rule #4</h4>
             <p>
               If a side effect is subscribing to an external store, use the
