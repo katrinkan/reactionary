@@ -245,6 +245,7 @@ export default function Custom() {
           alt="Cat in space helment loves it"
           height={350}
           width={350}
+          className="image"
         />
       </section>
       <section>
@@ -254,16 +255,14 @@ export default function Custom() {
             return (
               <div className="gridItem" key={hook.idex}>
                 <h4>{hook.title}</h4>
-                <div className={styles.codeframe}>
+                <div>
                   <iframe
-                    height="300"
-                    width="400"
                     title={hook.title}
                     src={hook.src}
                     frameborder="no"
                     loading="lazy"
                     allowtransparency="true"
-                    className="codeframe"
+                    className={styles.codeframe}
                   />
                 </div>
               </div>
