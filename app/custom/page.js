@@ -3,6 +3,7 @@
 import Image from "next/image";
 import customCat from "customCat.png";
 import styles from "./styles.module.css";
+import { useMemo, useState } from "react";
 
 const hooks = [
   {
@@ -232,6 +233,16 @@ const hooks = [
 ];
 
 export default function Custom() {
+  const [query, setQuery] = useState("");
+
+  const filteredHooks = useMemo(() => {
+    if (!query) {
+      return hooks;
+    } else {
+      return hooks.filter((hook) => hook.tags.includes(query.toLowerCase()));
+    }
+  }, [query]);
+
   return (
     <div>
       <section className="header">
@@ -249,9 +260,17 @@ export default function Custom() {
         />
       </section>
       <section>
-        <h3> Build search</h3>
+        <div className={styles.searchWrapper}>
+          <input
+            type="search"
+            onChange={(e) => setQuery(e.target.value)}
+            value={query}
+            placeholder="Search"
+            className={styles.search}
+          />
+        </div>
         <div className="gridContainer">
-          {hooks.map((hook) => {
+          {filteredHooks.map((hook) => {
             return (
               <div className="gridItem" key={hook.idex}>
                 <h4>{hook.title}</h4>
