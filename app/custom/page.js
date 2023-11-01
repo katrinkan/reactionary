@@ -269,25 +269,32 @@ export default function Custom() {
             className={styles.search}
           />
         </div>
-        <div className="gridContainer">
-          {filteredHooks.map((hook) => {
-            return (
-              <div className="gridItem" key={hook.idex}>
-                <h4>{hook.title}</h4>
-                <div>
-                  <iframe
-                    title={hook.title}
-                    src={hook.src}
-                    frameborder="no"
-                    loading="lazy"
-                    allowtransparency="true"
-                    className={styles.codeframe}
-                  />
+
+        {filteredHooks.length > 0 ? (
+          <div className="gridContainer">
+            {filteredHooks.map((hook) => {
+              return (
+                <div className="gridItem" key={hook.idex}>
+                  <h4>{hook.title}</h4>
+                  <div>
+                    <iframe
+                      title={hook.title}
+                      src={hook.src}
+                      frameborder="no"
+                      loading="lazy"
+                      allowtransparency="true"
+                      className={styles.codeframe}
+                    />
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        ) : (
+          <div className={styles.noHooks}>
+            <p>Sorry, no Hooks found. Please try again!</p>
+          </div>
+        )}
       </section>
     </div>
   );
