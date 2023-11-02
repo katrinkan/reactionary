@@ -251,13 +251,12 @@ export default function Custom() {
           <h3>view = function(state)</h3>
         </div>
 
-        <Image
-          src={customCat}
-          alt="Cat in space helment loves it"
-          height={350}
-          width={350}
-          className="image"
-        />
+        <div className="stage">
+          <figure className="ball">
+            <span className="shadow"></span>
+            <span className="iris irisCustom"></span>
+          </figure>
+        </div>
       </section>
       <section>
         <div className={styles.searchWrapper}>

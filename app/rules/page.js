@@ -10,13 +10,12 @@ export default function Rules() {
           <h3>view = function(state)</h3>
         </div>
 
-        <Image
-          src={rulesCat}
-          alt="Cat in space helmet saying Hi"
-          width={350}
-          height={350}
-          className="image"
-        />
+        <div className="stage">
+          <figure className="ball">
+            <span className="shadow"></span>
+            <span className="iris irisRules"></span>
+          </figure>
+        </div>
       </section>
       <section>
         <div className="gridContainer">
