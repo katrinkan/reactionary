@@ -1,3 +1,4 @@
+import Eye from "../components/eye";
 import styles from "./styles.module.css";
 
 export default function Hooks() {
@@ -8,13 +9,7 @@ export default function Hooks() {
           <h2>React Hooks</h2>
           <h3>view = function(state)</h3>
         </div>
-
-        <div className="stage">
-          <figure className="ball">
-            <span className="shadow"></span>
-            <span className="iris irisHooks"></span>
-          </figure>
-        </div>
+        <Eye individual="irisHooks" />
       </section>
       <section>
         <div className="gridContainer">

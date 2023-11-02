@@ -295,6 +295,11 @@ footer > h4 {
     height: 200px;
   }
 
+  .ball::after {
+    top: 22%;
+    left: 20%;
+  }
+
   @keyframes move-eye-skew {
     0% {
       transform: none;
@@ -376,6 +381,11 @@ footer > h4 {
   .stage {
     width: 100px;
     height: 100px;
+  }
+
+  .ball::after {
+    top: 68%;
+    left: 60%;
   }
 
   @keyframes move-eye-skew {

@@ -1,3 +1,5 @@
+import Eye from "../components/eye";
+
 export default function Rules() {
   return (
     <div>
@@ -6,13 +8,7 @@ export default function Rules() {
           <h2>React Rules</h2>
           <h3>view = function(state)</h3>
         </div>
-
-        <div className="stage">
-          <figure className="ball">
-            <span className="shadow"></span>
-            <span className="iris irisRules"></span>
-          </figure>
-        </div>
+        <Eye individual="irisRules" />
       </section>
       <section>
         <div className="gridContainer">

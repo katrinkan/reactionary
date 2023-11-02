@@ -1,5 +1,6 @@
 "use client";
 
+import Eye from "../components/eye";
 import styles from "./styles.module.css";
 import { useMemo, useState } from "react";
 
@@ -249,12 +250,7 @@ export default function Custom() {
           <h3>view = function(state)</h3>
         </div>
 
-        <div className="stage">
-          <figure className="ball">
-            <span className="shadow"></span>
-            <span className="iris irisCustom"></span>
-          </figure>
-        </div>
+        <Eye individual="irisCustom" />
       </section>
       <section>
         <div className={styles.searchWrapper}>
