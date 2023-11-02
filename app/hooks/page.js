@@ -1,5 +1,3 @@
-import Image from "next/image";
-import hooksCat from "hooksCat.png";
 import styles from "./styles.module.css";
 
 export default function Hooks() {

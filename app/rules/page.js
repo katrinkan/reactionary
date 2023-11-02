@@ -1,6 +1,3 @@
-import Image from "next/image";
-import rulesCat from "rulesCat.png";
-
 export default function Rules() {
   return (
     <div>

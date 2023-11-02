@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import customCat from "customCat.png";
 import styles from "./styles.module.css";
 import { useMemo, useState } from "react";
 
