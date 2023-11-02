@@ -281,13 +281,10 @@ footer > h4 {
   .gridContainer {
     grid-template-columns: 1fr;
     padding: 0;
+    margin-bottom: 30px;
   }
   .gridItem {
     width: 80%;
-  }
-
-  .lastItem {
-    margin-bottom: 30px;
   }
 
   .stage {
@@ -369,13 +366,10 @@ footer > h4 {
   .gridContainer {
     grid-template-columns: 1fr;
     padding: 0;
+    margin-bottom: 30px;
   }
   .gridItem {
     width: 80%;
-  }
-
-  .lastItem {
-    margin-bottom: 30px;
   }
 
   .stage {
