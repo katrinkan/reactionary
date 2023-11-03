@@ -195,24 +195,20 @@ footer > h4 {
     #4d0ecb 100%
   );
 }
+
 .iris {
-  width: 40%;
-  height: 40%;
+  --size: 40%;
+  width: var(--size);
+  height: var(--size);
   margin: 30%;
   border-radius: 100%;
-
-  -webkit-transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
-  -moz-transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
-  -ms-transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
-  -o-transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
-  transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
   position: absolute;
-  -webkit-animation: move-eye-skew 5s ease-out infinite;
-  -moz-animation: move-eye-skew 5s ease-out infinite;
-  -o-animation: move-eye-skew 5s ease-out infinite;
-  -ms-animation: move-eye-skew 5s ease-out infinite;
-  animation: move-eye-skew 5s ease-out infinite;
+  bottom: -20%;
+  left: 0;
+  transform-origin: top;
+  background-color: #000;
 }
+
 .iris:before {
   content: "";
   display: block;
@@ -224,6 +220,7 @@ footer > h4 {
   left: 31.25%;
   background: black;
 }
+
 .iris:after {
   content: "";
   display: block;
