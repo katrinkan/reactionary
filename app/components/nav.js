@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import useClickOutside from "./useClickOutside";
 
 const menuList = [
   { text: "Rules", href: "/rules" },
@@ -9,10 +10,12 @@ const menuList = [
 ];
 
 export default function Nav() {
+  const ref = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
+  useClickOutside(ref, () => setIsOpen(false));
 
   return (
-    <div className="nav">
+    <div className="nav" ref={ref}>
       <h1>
         <Link href="/rules" className="homeLink">
           Reactionary
