@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useRef, useState } from "react";
-import useClickOutside from "./useClickOutside";
+import useClickOutside from "../utils/useClickOutside";
 
 const menuList = [
   { text: "Rules", href: "/rules" },
@@ -29,7 +29,11 @@ export default function Nav() {
       <div className={`${isOpen ? "open" : ""} menuList`}>
         {menuList.map((menu, index) => (
           <div key={index}>
-            <Link href={menu.href} className="menuLink">
+            <Link
+              href={menu.href}
+              className="menuLink"
+              onClick={() => setIsOpen(false)}
+            >
               {menu.text}
             </Link>
           </div>

@@ -111,29 +111,6 @@ footer > h4 {
   background-color: #4d0ecb;
 }
 
-@keyframes move-eye-skew {
-  0% {
-    transform: none;
-  }
-  20% {
-    transform: translateX(-68px) translateY(30px) skewX(15deg) skewY(-10deg)
-      scale(0.95);
-  }
-  25%,
-  44% {
-    transform: none;
-  }
-  50%,
-  60% {
-    transform: translateX(68px) translateY(-40px) skewX(5deg) skewY(2deg)
-      scaleX(0.95);
-  }
-  66%,
-  100% {
-    transform: none;
-  }
-}
-
 .ball {
   display: inline-block;
   margin: 0;
@@ -293,29 +270,6 @@ footer > h4 {
     top: 22%;
     left: 20%;
   }
-
-  @keyframes move-eye-skew {
-    0% {
-      transform: none;
-    }
-    20% {
-      transform: translateX(-40px) translateY(20px) skewX(15deg) skewY(-10deg)
-        scale(0.95);
-    }
-    25%,
-    44% {
-      transform: none;
-    }
-    50%,
-    60% {
-      transform: translateX(28px) translateY(-48px) skewX(5deg) skewY(2deg)
-        scaleX(0.95);
-    }
-    66%,
-    100% {
-      transform: none;
-    }
-  }
 }
 
 @media (max-width: 500px) {
@@ -377,28 +331,5 @@ footer > h4 {
   .ball::after {
     top: 68%;
     left: 60%;
-  }
-
-  @keyframes move-eye-skew {
-    0% {
-      transform: none;
-    }
-    20% {
-      transform: translateX(-26px) translateY(8px) skewX(15deg) skewY(-10deg)
-        scale(0.95);
-    }
-    25%,
-    44% {
-      transform: none;
-    }
-    50%,
-    60% {
-      transform: translateX(24px) translateY(-16px) skewX(5deg) skewY(2deg)
-        scaleX(0.95);
-    }
-    66%,
-    100% {
-      transform: none;
-    }
   }
 }

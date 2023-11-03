@@ -1,5 +1,5 @@
 "use client";
-import useMouse from "./useMouse";
+import useMouse from "../utils/useMouse";
 
 export default function Eye({ individual }) {
   const [mouse, ref] = useMouse();
