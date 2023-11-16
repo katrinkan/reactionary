@@ -35,6 +35,17 @@ export default function RootLayout({ children }) {
             making network requests, and updating the DOM are all examples of
             common side effects.
           </p>
+          <div>
+            <small>
+              <a
+                href="https://github.com/katrinkan/reactionary"
+                target="_blank"
+              >
+                Coded
+              </a>{" "}
+              with 💜 by Katrin Kanape
+            </small>
+          </div>
         </footer>
       </body>
     </html>

@@ -41,6 +41,10 @@ footer {
 footer > h4 {
   padding-left: 20px;
 }
+
+footer > div {
+  text-align: center;
+}
 .nav {
   display: flex;
   justify-content: space-between;
