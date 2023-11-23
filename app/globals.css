@@ -1,24 +1,24 @@
 html {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Play", sans-serif;
+  color: #4d0ecb;
   background-color: #98e6d8;
-  opacity: 0.8;
   background-image: linear-gradient(#fff1f1 1px, transparent 1px),
     linear-gradient(to right, #fff1f1 1px, #98e6d8 1px);
   background-size: 20px 20px;
-  color: #4d0ecb;
-  margin: 0 auto;
-  width: 100%;
-  font-family: "Play", sans-serif;
+  opacity: 0.8;
 }
 body {
   margin: 0;
 }
 hr {
-  color: #98e6d8;
   display: block;
+  color: #98e6d8;
 }
 h1 {
-  font-size: 36px;
   padding-left: 5px;
+  font-size: 36px;
 }
 h2 {
   font-size: 72px;
@@ -27,17 +27,17 @@ h3 {
   font-size: 60px;
 }
 h4 {
-  font-size: 28px;
   padding-left: 20px;
+  font-size: 28px;
 }
 p {
-  font-size: 24px;
   padding: 0 20px;
+  font-size: 24px;
 }
 footer {
-  background-color: #fff1f1;
   margin-bottom: 0;
   padding: 1px 30px 20px 30px;
+  background-color: #fff1f1;
 }
 footer > h4 {
   padding-left: 20px;
@@ -54,9 +54,9 @@ footer > div {
 .header {
   display: flex;
   justify-content: space-evenly;
-  background-color: #fff1f1;
   align-items: center;
   padding: 20px 0;
+  background-color: #fff1f1;
 }
 .menuBar {
   display: none;
@@ -79,10 +79,10 @@ footer > div {
 
 .menuLink {
   padding-right: 8px;
-  color: #4d0ecb;
-  text-decoration: none;
   font-size: 20px;
   font-weight: 700;
+  text-decoration: none;
+  color: #4d0ecb;
   transition: all 0.2s;
 }
 .menuLink:hover {
@@ -99,13 +99,13 @@ footer > div {
   margin-bottom: 20px;
 }
 .gridItem {
-  background-color: white;
-  color: #4d0ecb;
-  padding: 5px 10px;
   width: 70%;
+  justify-self: center;
+  padding: 5px 10px;
   border: solid 4px #000;
   box-shadow: 15px 15px 0 -4px #4d0ecb, 15px 15px #000;
-  justify-self: center;
+  color: #4d0ecb;
+  background-color: white;
 }
 .homeLink {
   text-decoration: none;
@@ -118,11 +118,11 @@ footer > div {
 
 .ball {
   display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
   margin: 0;
   border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  position: relative;
   background: radial-gradient(
     circle at 50% 40%,
     #fcfcfc,
@@ -180,26 +180,26 @@ footer > div {
 
 .iris {
   --size: 40%;
+  position: absolute;
+  bottom: -20%;
+  left: 0;
   width: var(--size);
   height: var(--size);
   margin: 30%;
   border-radius: 100%;
-  position: absolute;
-  bottom: -20%;
-  left: 0;
-  transform-origin: top;
   background-color: #000;
+  transform-origin: top;
 }
 
 .iris:before {
   content: "";
   display: block;
   position: absolute;
+  top: 31.25%;
+  left: 31.25%;
   width: 37.5%;
   height: 37.5%;
   border-radius: 100%;
-  top: 31.25%;
-  left: 31.25%;
   background: black;
 }
 
@@ -207,11 +207,11 @@ footer > div {
   content: "";
   display: block;
   position: absolute;
+  top: 18.75%;
+  left: 18.75%;
   width: 31.25%;
   height: 31.25%;
   border-radius: 100%;
-  top: 18.75%;
-  left: 18.75%;
   background: rgba(255, 255, 255, 0.2);
 }
 
@@ -234,9 +234,9 @@ footer > div {
 }
 
 .stage {
+  display: inline-block;
   width: 300px;
   height: 300px;
-  display: inline-block;
   margin: 20px;
   -webkit-perspective: 1200px;
   -moz-perspective: 1200px;
@@ -251,9 +251,9 @@ footer > div {
 }
 
 .codeframe {
-  padding-left: 20px;
   width: 95%;
   height: 300px;
+  padding-left: 20px;
 }
 
 @media (min-width: 501px) and (max-width: 960px) {
@@ -265,8 +265,8 @@ footer > div {
   }
   .gridContainer {
     grid-template-columns: 1fr;
-    padding: 0;
     margin-bottom: 30px;
+    padding: 0;
   }
   .gridItem {
     width: 80%;
@@ -297,12 +297,12 @@ footer > div {
     font-size: 24px;
   }
   h4 {
-    font-size: 20px;
     padding-left: 10px;
+    font-size: 20px;
   }
   p {
-    font-size: 16px;
     padding-left: 10px;
+    font-size: 16px;
   }
   .menuBar {
     display: flex;
@@ -327,8 +327,8 @@ footer > div {
 
   .gridContainer {
     grid-template-columns: 1fr;
-    padding: 0;
     margin-bottom: 30px;
+    padding: 0;
   }
   .gridItem {
     width: 80%;
