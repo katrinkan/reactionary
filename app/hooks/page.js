@@ -58,7 +58,7 @@ const memoizingHooks = [
 
 export default function Hooks() {
   return (
-    <div>
+    <>
       <Hero title="React Hooks" iris="irisHooks" />
 
       <section>
@@ -68,23 +68,23 @@ export default function Hooks() {
           })}
         </div>
       </section>
+      <section className={styles.dangerzone}>
+        <h3>Danger Zone</h3>
+        <p>
+          Performance optimization comes never for free.The default behavior of
+          React isn&apos;t to memoize components, functions or values because
+          the majority of the time it is unnecessary. This applies for
+          React.memo, useMemo and useCallback. React treats these like a
+          performance hint rather than a guarantee. It may choose to forget...
+        </p>
+      </section>
       <section>
-        <div className={styles.dangerzone}>
-          <h3>Danger Zone</h3>
-          <p>
-            Performance optimization comes never for free.The default behavior
-            of React isn&apos;t to memoize components, functions or values
-            because the majority of the time it is unnecessary. This applies for
-            React.memo, useMemo and useCallback. React treats these like a
-            performance hint rather than a guarantee. It may choose to forget...
-          </p>
-        </div>
         <div className="gridContainer">
           {memoizingHooks.map((hook) => {
             return <Card item={hook} key={hook.id} />;
           })}
         </div>
       </section>
-    </div>
+    </>
   );
 }

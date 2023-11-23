@@ -3,7 +3,7 @@
   text-align: center;
   background-color: var(--white);
 }
-.dangerzone > h3 {
+.dangerzone h3 {
   padding-top: 20px;
   color: var(--danger);
 }

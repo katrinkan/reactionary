@@ -36,7 +36,7 @@ const rules = [
 
 export default function Rules() {
   return (
-    <div>
+    <>
       <Hero title="React Rules" iris="irisRules" />
       <section>
         <div className="gridContainer">
@@ -45,6 +45,6 @@ export default function Rules() {
           })}
         </div>
       </section>
-    </div>
+    </>
   );
 }

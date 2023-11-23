@@ -16,7 +16,7 @@ export default function Nav() {
   useClickOutside(ref, () => setIsOpen(false));
 
   return (
-    <div className={styles.nav} ref={ref}>
+    <nav className={styles.nav} ref={ref}>
       <h1>
         <Link href="/rules" className={styles.homeLink}>
           Reactionary
@@ -40,6 +40,6 @@ export default function Nav() {
           </div>
         ))}
       </div>
-    </div>
+    </nav>
   );
 }

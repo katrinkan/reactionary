@@ -285,20 +285,19 @@ export default function Custom() {
   }, [query]);
 
   return (
-    <div>
+    <>
       <Hero title="Custom Hooks" iris="irisCustom" />
 
+      <section className={styles.searchWrapper}>
+        <input
+          type="search"
+          onChange={(e) => setQuery(e.target.value)}
+          value={query}
+          placeholder="Search"
+          className={styles.search}
+        />
+      </section>
       <section>
-        <div className={styles.searchWrapper}>
-          <input
-            type="search"
-            onChange={(e) => setQuery(e.target.value)}
-            value={query}
-            placeholder="Search"
-            className={styles.search}
-          />
-        </div>
-
         {filteredHooks.length > 0 ? (
           <div className="gridContainer">
             {filteredHooks.map((hook) => {
@@ -311,6 +310,6 @@ export default function Custom() {
           </div>
         )}
       </section>
-    </div>
+    </>
   );
 }
