@@ -1,8 +1,9 @@
-import Eye from "./eye";
+import Eye from "../Eye/eye";
+import styles from "./hero.module.css";
 
-export default function Header({ title, iris }) {
+export default function Hero({ title, iris }) {
   return (
-    <section className="header">
+    <section className={styles.hero}>
       <div>
         <h2>{title}</h2>
         <h3>view = function(state)</h3>

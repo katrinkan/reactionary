@@ -4,19 +4,19 @@
 }
 .search {
   width: 80%;
-  background-color: #4d0ecb;
+  background-color: var(--primaryColor);
   padding: 10px;
-  border: solid 4px #000;
-  box-shadow: 15px 15px 0 -4px #fff1f1, 15px 15px #000;
+  border: solid 4px var(--borderColor);
+  box-shadow: 15px 15px 0 -4px var(--white), 15px 15px var(--borderColor);
   outline: none;
   font-size: 16px;
   font-weight: 700;
-  color: #fff1f1;
+  color: var(--white);
 }
 .search::placeholder {
   font-size: 16px;
   font-weight: 700;
-  color: #fff1f1;
+  color: var(--white);
   opacity: 0.5;
 }
 .search::-webkit-search-cancel-button {

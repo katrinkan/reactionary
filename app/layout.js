@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Play } from "next/font/google";
-import Nav from "./components/nav";
+import Nav from "./components/Nav/nav";
 
 const play = Play({
   weight: ["400", "700"],

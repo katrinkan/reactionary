@@ -1,5 +1,5 @@
-import Card from "../components/card";
-import Header from "../components/header";
+import Card from "../components/Card/card";
+import Hero from "../components/Hero/hero";
 
 const rules = [
   {
@@ -37,7 +37,7 @@ const rules = [
 export default function Rules() {
   return (
     <div>
-      <Header title="React Rules" iris="irisRules" />
+      <Hero title="React Rules" iris="irisRules" />
       <section>
         <div className="gridContainer">
           {rules.map((rule) => {

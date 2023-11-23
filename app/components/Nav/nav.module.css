@@ -1,0 +1,68 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.menuBar {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  row-gap: 6px;
+  cursor: pointer;
+}
+.menuBar div {
+  width: 40px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--primaryColor);
+}
+.menuList {
+  display: flex;
+}
+
+.menuLink {
+  padding-right: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--primaryColor);
+  transition: all 0.2s;
+}
+.menuLink:hover {
+  color: var(--white);
+  background-color: var(--primaryColor);
+}
+.homeLink {
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+.homeLink:hover {
+  color: var(--white);
+  background-color: var(--primaryColor);
+}
+
+@media (max-width: 500px) {
+  .menuBar {
+    display: flex;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: start;
+  }
+  .menuList {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .menuList.open {
+    display: flex;
+    background-color: var(--white);
+  }
+}

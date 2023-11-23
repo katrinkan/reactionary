@@ -1,0 +1,157 @@
+.ball {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 50% 40%,
+    #fcfcfc,
+    #efeff1 66%,
+    #9b5050 100%
+  );
+}
+.ball::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.8) 14%,
+    rgba(255, 255, 255, 0) 24%
+  );
+  -webkit-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+  -moz-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+  -ms-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+  -o-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+  transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+}
+
+.irisRules {
+  background: radial-gradient(
+    circle at 50% 50%,
+    #208ab4 0%,
+    #6fbfff 30%,
+    #4381b2 100%
+  );
+}
+
+.irisHooks {
+  background: radial-gradient(
+    circle at 50% 50%,
+    #20b4a7 0%,
+    #98e6d8 30%,
+    #43b294 100%
+  );
+}
+
+.irisCustom {
+  background: radial-gradient(
+    circle at 50% 50%,
+    #6120b4 0%,
+    #b36fff 30%,
+    #4d0ecb 100%
+  );
+}
+
+.iris {
+  --size: 40%;
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  width: var(--size);
+  height: var(--size);
+  margin: 30%;
+  border-radius: 100%;
+  background-color: var(--borderColor);
+  transform-origin: top;
+}
+
+.iris:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 31.25%;
+  left: 31.25%;
+  width: 37.5%;
+  height: 37.5%;
+  border-radius: 100%;
+  background: var(--borderColor);
+}
+
+.iris:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 18.75%;
+  left: 18.75%;
+  width: 31.25%;
+  height: 31.25%;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.ball .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.1) 40%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  -webkit-transform: rotateX(90deg) translateZ(-150px);
+  -moz-transform: rotateX(90deg) translateZ(-150px);
+  -ms-transform: rotateX(90deg) translateZ(-150px);
+  -o-transform: rotateX(90deg) translateZ(-150px);
+  transform: rotateX(90deg) translateZ(-150px);
+  z-index: -1;
+}
+
+.stage {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  -o-perspective: 1200px;
+  perspective: 1200px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+}
+
+@media (min-width: 501px) and (max-width: 960px) {
+  .stage {
+    width: 200px;
+    height: 200px;
+  }
+
+  .ball::after {
+    top: 22%;
+    left: 20%;
+  }
+}
+
+@media (max-width: 500px) {
+  .stage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .ball::after {
+    top: 68%;
+    left: 60%;
+  }
+}

@@ -1,5 +1,5 @@
-import Header from "../components/header";
-import Card from "../components/card";
+import Hero from "../components/Hero/hero";
+import Card from "../components/Card/card";
 import styles from "./styles.module.css";
 
 const hooks = [
@@ -59,7 +59,7 @@ const memoizingHooks = [
 export default function Hooks() {
   return (
     <div>
-      <Header title="React Hooks" iris="irisHooks" />
+      <Hero title="React Hooks" iris="irisHooks" />
 
       <section>
         <div className="gridContainer">

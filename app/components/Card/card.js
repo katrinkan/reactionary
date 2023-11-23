@@ -1,6 +1,8 @@
+import styles from "./card.module.css";
+
 export default function Card({ item }) {
   return (
-    <div className="gridItem">
+    <div className={styles.gridItem}>
       <h4>{item.title}</h4>
       {item.src ? (
         <div>
@@ -10,7 +12,7 @@ export default function Card({ item }) {
             frameborder="no"
             loading="lazy"
             allowtransparency="true"
-            className="codeframe"
+            className={styles.codeframe}
           />
         </div>
       ) : (

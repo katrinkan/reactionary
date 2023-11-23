@@ -1,8 +1,7 @@
 "use client";
 
-import Card from "../components/card";
-import Eye from "../components/eye";
-import Header from "../components/header";
+import Card from "../components/Card/card";
+import Hero from "../components/Hero/hero";
 import styles from "./styles.module.css";
 import { useMemo, useState } from "react";
 
@@ -287,7 +286,7 @@ export default function Custom() {
 
   return (
     <div>
-      <Header title="Custom Hooks" iris="irisCustom" />
+      <Hero title="Custom Hooks" iris="irisCustom" />
 
       <section>
         <div className={styles.searchWrapper}>
