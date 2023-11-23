@@ -41,7 +41,7 @@ export default function Rules() {
       <section>
         <div className="gridContainer">
           {rules.map((rule) => {
-            return <Card item={rule} key={rule.index} />;
+            return <Card item={rule} key={rule.id} />;
           })}
         </div>
       </section>

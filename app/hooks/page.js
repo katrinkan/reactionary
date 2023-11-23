@@ -64,7 +64,7 @@ export default function Hooks() {
       <section>
         <div className="gridContainer">
           {hooks.map((hook) => {
-            return <Card item={hook} key={hook.index} />;
+            return <Card item={hook} key={hook.id} />;
           })}
         </div>
       </section>
@@ -81,7 +81,7 @@ export default function Hooks() {
         </div>
         <div className="gridContainer">
           {memoizingHooks.map((hook) => {
-            return <Card item={hook} />;
+            return <Card item={hook} key={hook.id} />;
           })}
         </div>
       </section>

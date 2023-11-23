@@ -303,7 +303,7 @@ export default function Custom() {
         {filteredHooks.length > 0 ? (
           <div className="gridContainer">
             {filteredHooks.map((hook) => {
-              return <Card item={hook} />;
+              return <Card item={hook} key={hook.id} />;
             })}
           </div>
         ) : (

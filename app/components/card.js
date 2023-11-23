@@ -1,6 +1,6 @@
 export default function Card({ item }) {
   return (
-    <div className="gridItem" key={item.id}>
+    <div className="gridItem">
       <h4>{item.title}</h4>
       {item.src ? (
         <div>
