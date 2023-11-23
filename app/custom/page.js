@@ -1,6 +1,8 @@
 "use client";
 
+import Card from "../components/card";
 import Eye from "../components/eye";
+import Header from "../components/header";
 import styles from "./styles.module.css";
 import { useMemo, useState } from "react";
 
@@ -244,14 +246,8 @@ export default function Custom() {
 
   return (
     <div>
-      <section className="header">
-        <div>
-          <h2>Custom Hooks</h2>
-          <h3>view = function(state)</h3>
-        </div>
+      <Header title="Custom Hooks" iris="irisCustom" />
 
-        <Eye individual="irisCustom" />
-      </section>
       <section>
         <div className={styles.searchWrapper}>
           <input
@@ -266,21 +262,7 @@ export default function Custom() {
         {filteredHooks.length > 0 ? (
           <div className="gridContainer">
             {filteredHooks.map((hook) => {
-              return (
-                <div className="gridItem" key={hook.idex}>
-                  <h4>{hook.title}</h4>
-                  <div>
-                    <iframe
-                      title={hook.title}
-                      src={hook.src}
-                      frameborder="no"
-                      loading="lazy"
-                      allowtransparency="true"
-                      className={styles.codeframe}
-                    />
-                  </div>
-                </div>
-              );
+              return <Card item={hook} />;
             })}
           </div>
         ) : (
